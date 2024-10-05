@@ -20,7 +20,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az storage blob upload-batch --account-name freefitstorage --auth-mode key -d '$web' -s './bin/Release/net8.0/publish/wwwroot'
+            az storage blob upload-batch --account-name freefitstorage --auth-mode key -d '$web' -s './src/FreeFit.Pwa/bin/Release/net8.0/publish/wwwroot'
 
       - name: logout
         run: |
